@@ -4,11 +4,12 @@ import json
 def createTracking(title, courier, trackingNumber):
 
     conn = http.client.HTTPSConnection("api.aftership.com")
+    API_Key = "INPUT API KEY"
 
     headers = {
-            'Content-Type': "application/json",
-            'aftership-api-key': "fe794360-ef83-4ca1-82db-77b6259b4757"
-            }
+        'Content-Type': "application/json",
+        'aftership-api-key': API_Key
+        }
 
     payload = "{\n  \"tracking\": {\n    \"slug\": \"" + courier + "\",\n    \"tracking_number\": \""+ trackingNumber +"\",\n    \"title\": \""+ title +"\",\n    \"smses\": [\n      \"\",\n      \"\"\n    ],\n    \"emails\": [\n      \"\",\n      \"\"\n    ],\n    \"order_id\": \"\",\n    \"order_number\": \"\",\n    \"order_id_path\": \"\",\n    \"custom_fields\": {\n      \"product_name\": \"\",\n      \"product_price\": \"\"\n    },\n    \"language\": \"\",\n    \"order_promised_delivery_date\": \"\",\n    \"delivery_type\": \"\",\n    \"pickup_location\": \"\",\n    \"pickup_note\": \"\"\n  }\n}"
 

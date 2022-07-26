@@ -2,10 +2,11 @@ import http.client
 import json
 
 conn = http.client.HTTPSConnection("api.aftership.com")
+API_Key = "INPUT API KEY"
 
 headers = {
         'Content-Type': "application/json",
-        'aftership-api-key': "fe794360-ef83-4ca1-82db-77b6259b4757"
+        'aftership-api-key': API_Key
         }
 
 def packageStatus(courier, trackingNumber):
