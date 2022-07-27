@@ -3,7 +3,7 @@
 A package tracker that allows the user to input and store their packages to a AfterShip me account and is able to retrieve the status of it using the AfterShip API.
 There is a feature that gets all of the possible couriers of a tracking number.
 
-
+# Setting up
 To get started, first  clone the repo and open the files in your prefered IDE. Then sign up for an [Aftership](https://www.aftership.com/) account and obtain the API key. Edit the ``findCarriers.py``,``packageStatus.py``, and ``createTracking.py`` files and replace the text "INPUT API KEY" with your API key. After that, you are able to run the ``main.py`` file and the three choices appear.
 
 ![main](https://user-images.githubusercontent.com/43973602/181116383-3876bd9c-3dda-48de-816f-d6cb29406b91.png)
